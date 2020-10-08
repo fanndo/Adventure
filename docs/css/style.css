@@ -9,13 +9,54 @@ figure img{
     height: auto;
     width: 100%;
 }
+li.nav-item a{
+    position: relative;
+}
+li.nav-item.active{
+    border-bottom: 1px solid white;
+}
+
+li.nav-item a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    left: 50%;
+    bottom:-1px;
+    background-color: white;
+    transition: all ease-in-out .2s;
+  }
+li.nav-item a:hover::after{
+width: 100%;
+left: 0;
+}
+
 .money::before {
     content:"$";
 }
-
+.table tr:hover {
+    cursor: pointer;
+    background-color: #28a74599!important;
+}
 .table thead th {
     color: #ffffff !important;
     border-bottom: 1px solid #ffffff!important;
     background-color: #28a745!important;
 }
 
+@media (max-width: 992px) { 
+    li.nav-item.active{
+        border-bottom: 0;
+    }
+    li.nav-item a::after{
+        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: color 0 ease-in;
+        transition: none;
+        height: 0px;
+        left: 0;
+        bottom:0px;
+    
+    }
+    
+}
