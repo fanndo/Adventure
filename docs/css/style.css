@@ -11,5 +11,11 @@ figure img{
 }
 .money::before {
     content:"$";
-  }
+}
+
+.table thead th {
+    color: #ffffff !important;
+    border-bottom: 1px solid #ffffff!important;
+    background-color: #28a745!important;
+}
 

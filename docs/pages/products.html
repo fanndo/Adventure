@@ -21,7 +21,7 @@
         <!-- Just an image -->
         <nav class="navbar navbar-dark bg-success navbar-expand-lg">
             <a class="navbar-brand" href="../index.html">
-                <img src="https://sites.google.com/site/deportesextremosespana/_/rsrc/1472868250196/home/4.png" width="200" alt="Logo">
+                <img src="../assets/logo.png" width="200" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -48,16 +48,25 @@
           <li class="breadcrumb-item active" aria-current="page">Productos</li>
         </ol>
     </nav>
-    <main class="container mb-2">
+    <main class="container mb-5">
 
       <section>
-        <div class="d-flex flex-wrap mb-2">
-          <input type="text" class="form-control">
-          <button class="btn btn-block btn-outline-success">Buscar</button>
+        <div class="card mb-2">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-xs 12 col-sm-8">
+                <input type="text" class="form-control" placeholder="Buscar..." autocomplete="off">
+              </div>
+              <div class="col-sm-4 col-xs col-xs-12 mt-1 mt-sm-0">
+                <button class="btn btn-block btn-outline-success"><i class="fas fa-search"></i> Buscar</button>
+
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <table class="table">
+            <table class="table table-striped">
               <thead class="thead-dark">
                   <tr>
                       <th>C&oacute;digo</th>
