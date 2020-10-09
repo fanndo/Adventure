@@ -49,11 +49,22 @@ left: 0;
 
 /*  Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) { 
-
     #quienes-somos .card{
         width: 100%!important;
         margin-bottom: .3rem;
     } 
+    li.nav-item.active{
+        border-bottom: 0;
+    }
+    li.nav-item a::after{
+        -moz-transition: none;
+        -webkit-transition: none;
+        -o-transition: color 0 ease-in;
+        transition: none;
+        height: 0px;
+        left: 0;
+        bottom:0px;
+    }
 }
 
 
