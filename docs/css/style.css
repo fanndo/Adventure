@@ -30,7 +30,10 @@ li.nav-item a:hover::after{
 width: 100%;
 left: 0;
 }
-
+.card{
+    width: 31.3333%;
+    margin: .3rem;
+}
 .money::before {
     content:"$";
 }
@@ -44,7 +47,21 @@ left: 0;
     background-color: #28a745!important;
 }
 
-@media (max-width: 992px) { 
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) { 
+
+    .card{
+        width: 100%!important;
+        margin-bottom: .3rem;
+    } 
+}
+
+
+@media (min-width:576px) and (max-width: 992px) {
+    .card{
+        width: 48%!important;
+        margin: .3rem;
+    } 
     li.nav-item.active{
         border-bottom: 0;
     }
